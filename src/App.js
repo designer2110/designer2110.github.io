@@ -111,8 +111,8 @@ export default function SearchAppBar() {
       <Box
   component="img"
   sx={{
-    height: 183.33,
-    width: 200,
+    height: 137.49,
+    width: 150,
     // maxHeight: { xs: 233, md: 167 },
     // maxWidth: { xs: 350, md: 250 },
   }}
