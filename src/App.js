@@ -114,7 +114,7 @@ export default function SearchAppBar() {
         </header>
 
         <Grid container spacing={12}>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <Paper className={classes.paper}>
             <Box
   component="img"
@@ -138,7 +138,7 @@ export default function SearchAppBar() {
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <Paper className={classes.paper}>
             <Box
   component="img"
@@ -166,7 +166,7 @@ export default function SearchAppBar() {
       </Box>
       <Box m={16}>
       <Grid container spacing={12}>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <Paper className={classes.paper}>
              <Box
   component="img"
@@ -190,7 +190,7 @@ export default function SearchAppBar() {
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <Paper className={classes.paper}>
             <Box
   component="img"
