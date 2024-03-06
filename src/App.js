@@ -13,7 +13,8 @@ import captura1 from "./image/captura-lalashop.jpg";
 import captura2 from "./image/captura-laharolda.jpg";
 import captura3 from "./image/captura-bitcoin.jpg";
 import captura4 from "./image/captura-applestore.jpg";
-import Image from 'material-ui-image'
+import foto from "./image/4x4.jpg";
+import Image from 'mui-image';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -107,7 +108,18 @@ export default function SearchAppBar() {
       <Typography className={classes.title} variant="h3" noWrap>
       Demi Román Portfolio
       </Typography>
-      <Image src="./image/4x4.jpg"></Image>
+      <Box
+  component="img"
+  sx={{
+    height: 183.33,
+    width: 200,
+    // maxHeight: { xs: 233, md: 167 },
+    // maxWidth: { xs: 350, md: 250 },
+  }}
+  alt="Foto"
+  src={foto}
+/>
+      
       </Box>
       <Box m={16}>
         <header style={{ marginBottom: "10px" }}>
