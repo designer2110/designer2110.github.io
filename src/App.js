@@ -107,6 +107,7 @@ export default function SearchAppBar() {
       <Typography className={classes.title} variant="h3" noWrap>
       Demi Román Portfolio
       </Typography>
+      <Image src="./image/4x4.jpg"></Image>
       </Box>
       <Box m={16}>
         <header style={{ marginBottom: "10px" }}>
