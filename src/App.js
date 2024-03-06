@@ -119,8 +119,8 @@ export default function SearchAppBar() {
             <Box
   component="img"
   sx={{
-    height: 308.16,
-    width: 715,
+    height: 258.59,
+    width: 600,
     // maxHeight: { xs: 233, md: 167 },
     // maxWidth: { xs: 350, md: 250 },
   }}
@@ -143,8 +143,8 @@ export default function SearchAppBar() {
             <Box
   component="img"
   sx={{
-    height: 308.16,
-    width: 715,
+    height: 258.59,
+    width: 600,
     // maxHeight: { xs: 233, md: 167 },
     // maxWidth: { xs: 350, md: 250 },
   }}
@@ -171,8 +171,8 @@ export default function SearchAppBar() {
              <Box
   component="img"
   sx={{
-    height: 308.16,
-    width: 715,
+    height: 258.59,
+    width: 600,
     // maxHeight: { xs: 233, md: 167 },
     // maxWidth: { xs: 350, md: 250 },
   }}
@@ -195,8 +195,8 @@ export default function SearchAppBar() {
             <Box
   component="img"
   sx={{
-    height: 308.16,
-    width: 715,
+    height: 258.59,
+    width: 600,
     // maxHeight: { xs: 233, md: 167 },
     // maxWidth: { xs: 350, md: 250 },
   }}
