@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/%3Chttps://designer2110.github.io/portfolio%3E/static/css/main.195b76ac.css",
-    "main.js": "/%3Chttps://designer2110.github.io/portfolio%3E/static/js/main.8c3f371c.js",
-    "static/js/453.ace21015.chunk.js": "/%3Chttps://designer2110.github.io/portfolio%3E/static/js/453.ace21015.chunk.js",
-    "static/media/captura-laharolda.jpg": "/%3Chttps://designer2110.github.io/portfolio%3E/static/media/captura-laharolda.ccf2271baa08e7562c0f.jpg",
-    "static/media/captura-lalashop.jpg": "/%3Chttps://designer2110.github.io/portfolio%3E/static/media/captura-lalashop.c66cc2182698c84e0ea0.jpg",
-    "static/media/captura-bitcoin.jpg": "/%3Chttps://designer2110.github.io/portfolio%3E/static/media/captura-bitcoin.24c98279b55ceeb45234.jpg",
-    "static/media/captura-applestore.jpg": "/%3Chttps://designer2110.github.io/portfolio%3E/static/media/captura-applestore.9b69f79e4f8aebebe019.jpg",
-    "static/media/logo.svg": "/%3Chttps://designer2110.github.io/portfolio%3E/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/%3Chttps://designer2110.github.io/portfolio%3E/index.html",
-    "main.195b76ac.css.map": "/%3Chttps://designer2110.github.io/portfolio%3E/static/css/main.195b76ac.css.map",
-    "main.8c3f371c.js.map": "/%3Chttps://designer2110.github.io/portfolio%3E/static/js/main.8c3f371c.js.map",
-    "453.ace21015.chunk.js.map": "/%3Chttps://designer2110.github.io/portfolio%3E/static/js/453.ace21015.chunk.js.map"
+    "main.css": "/%3Chttps://designer2110.github.io%3E/static/css/main.195b76ac.css",
+    "main.js": "/%3Chttps://designer2110.github.io%3E/static/js/main.b9b89b2d.js",
+    "static/js/453.ace21015.chunk.js": "/%3Chttps://designer2110.github.io%3E/static/js/453.ace21015.chunk.js",
+    "static/media/captura-laharolda.jpg": "/%3Chttps://designer2110.github.io%3E/static/media/captura-laharolda.ccf2271baa08e7562c0f.jpg",
+    "static/media/captura-lalashop.jpg": "/%3Chttps://designer2110.github.io%3E/static/media/captura-lalashop.c66cc2182698c84e0ea0.jpg",
+    "static/media/captura-bitcoin.jpg": "/%3Chttps://designer2110.github.io%3E/static/media/captura-bitcoin.24c98279b55ceeb45234.jpg",
+    "static/media/captura-applestore.jpg": "/%3Chttps://designer2110.github.io%3E/static/media/captura-applestore.9b69f79e4f8aebebe019.jpg",
+    "static/media/logo.svg": "/%3Chttps://designer2110.github.io%3E/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/%3Chttps://designer2110.github.io%3E/index.html",
+    "main.195b76ac.css.map": "/%3Chttps://designer2110.github.io%3E/static/css/main.195b76ac.css.map",
+    "main.b9b89b2d.js.map": "/%3Chttps://designer2110.github.io%3E/static/js/main.b9b89b2d.js.map",
+    "453.ace21015.chunk.js.map": "/%3Chttps://designer2110.github.io%3E/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.195b76ac.css",
-    "static/js/main.8c3f371c.js"
+    "static/js/main.b9b89b2d.js"
   ]
 }
