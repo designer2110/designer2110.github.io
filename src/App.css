@@ -43,10 +43,25 @@ paper {
   textAlign: "center";
   verticalAlign: "middle";
   boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)";
-  borderRadius: "25px";
 }
 
 box{
   margin-right: 60px;
 }
+
+
+Toolbar {
+  display: flex;
+  justify-content: left;
+}
+
+
+Button {
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
 }

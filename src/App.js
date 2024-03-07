@@ -65,13 +65,10 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1)
   },
   paper: {
-    display: "flex",
-    justifyContent: "center",
     flexDirection: "column",
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "25px",
     alignItems: "center",
-    textAlign: "center",
     verticalAlign: "middle"
   },
   inputInput: {
@@ -95,17 +92,15 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar} elevation={0}>
+      <Paper className={classes.paper} elevation={3}>
         <Toolbar>
+        <div>
+        <Grid container spacing={12}>
+          <Grid item xs={12} md={12}>
           <Typography className={classes.title} variant="h6" noWrap>
             PORTFOLIO
           </Typography>
-          <Button className={classes.button}><a href="https://github.com/designer2110/demrom.github.io">Mis trabajos</a></Button>
-          <Button className={classes.button}><a href="https://github.com/designer2110/demrom.github.io/sobremi">Sobre mí</a></Button>
-          <Button className={classes.button}><a href="https://github.com/designer2110/demrom.github.io/contacto">Contacto</a></Button>
-        </Toolbar>
-      </AppBar>
-      <Box m={10}>
-      <Typography className={classes.title} variant="h3" noWrap>
+      <Typography className={classes.title} variant="h6" noWrap>
       Demi Román Portfolio
       </Typography>
       <Box
@@ -119,8 +114,20 @@ export default function SearchAppBar() {
   alt="Foto"
   src={foto}
 />
+</Grid>
+</Grid>
+</div>
+</Toolbar>
+<Toolbar>
+<div>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io">Mis trabajos</Button>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io/sobremi">Sobre mí</Button>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io/contacto">Contacto</Button>
+          </div>
+        </Toolbar>
+        </Paper>
+      </AppBar>
       
-      </Box>
       <Box m={16}>
         <header style={{ marginBottom: "10px" }}>
          
