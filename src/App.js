@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
 import { Button, Typography } from '@mui/material';
 import Box from "@mui/material/Box";
@@ -9,6 +10,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import InputBase from "@material-ui/core/InputBase";
 import Grid from "@material-ui/core/Grid";
+import Carousel from 'react-material-ui-carousel';
 import captura1 from "./image/captura-lalashop.jpg";
 import captura2 from "./image/captura-laharolda.jpg";
 import captura3 from "./image/captura-bitcoin.jpg";
@@ -88,6 +90,47 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SearchAppBar() {
+  
+const images = [{
+  "id": "Captura 1",
+  "author": "Dem Rom",
+  "width": 1870,
+  "height": 902,
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/gh-pages/static/media/captura-human-design1.f2f1c91eedd17e5dbc44.jpg?raw=true"
+},
+{
+  "id": "Captura 2",
+  "author": "Dem Rom",
+  "width": 1869,
+  "height": 905,
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-human-design2.jpg?raw=true"
+},
+{
+  "id": "Captura 3",
+  "author": "Dem Rom",
+  "width": 1868,
+  "height": 732,
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-human-design3.jpg?raw=true"
+}];
+
+const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
   const classes = useStyles();
 
   return (
@@ -241,7 +284,13 @@ export default function SearchAppBar() {
       <Grid container spacing={12}>
           <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
-             <Box
+            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
+                {
+                  images.map(image=> <img src={image.download_url} alt={image.author}/>)
+                }
+
+    </Carousel>
+             {/* <Box
   component="img"
   sx={{
     height: 258.59,
@@ -251,7 +300,7 @@ export default function SearchAppBar() {
   }}
   alt="The house from the offer."
   src={captura5}
-/>
+/> */}
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 variant="body2"
