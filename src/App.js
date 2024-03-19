@@ -13,6 +13,7 @@ import captura1 from "./image/captura-lalashop.jpg";
 import captura2 from "./image/captura-laharolda.jpg";
 import captura3 from "./image/captura-bitcoin.jpg";
 import captura4 from "./image/captura-applestore.jpg";
+import captura5 from "./image/captura-human-design1.jpg";
 import foto from "./image/4x4.jpg";
 import Image from 'mui-image';
 
@@ -207,6 +208,58 @@ export default function SearchAppBar() {
                 variant="h4"
               >
                 Página de Bitcoin
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid item xs={4} md={6}>
+            <Paper className={classes.paper}>
+            <Box
+  component="img"
+  sx={{
+    height: 258.59,
+    width: 600,
+    // maxHeight: { xs: 233, md: 167 },
+    // maxWidth: { xs: 350, md: 250 },
+  }}
+  alt="The house from the offer."
+  src={captura4}
+/>
+              <Typography
+                // style={{ width: "70%", margin: "auto" }}
+                variant="body2"
+                color="primary"
+                component="span"
+                variant="h4"
+              >
+                Applestore
+              </Typography>
+            </Paper>
+          </Grid>
+          </Grid>
+      </Box>
+      <Box m={16}>
+      <Grid container spacing={12}>
+          <Grid item xs={4} md={6}>
+            <Paper className={classes.paper}>
+             <Box
+  component="img"
+  sx={{
+    height: 258.59,
+    width: 600,
+    // maxHeight: { xs: 233, md: 167 },
+    // maxWidth: { xs: 350, md: 250 },
+  }}
+  alt="The house from the offer."
+  src={captura5}
+/>
+            <Typography
+                // style={{ width: "70%", margin: "auto" }}
+                variant="body2"
+                color="primary"
+                component="span"
+                variant="h4"
+              >
+                Página Fake de Diseño de Interiores Human Design
               </Typography>
             </Paper>
           </Grid>
