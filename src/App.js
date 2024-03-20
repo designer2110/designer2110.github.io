@@ -96,7 +96,7 @@ const images = [{
   "author": "Dem Rom",
   "width": 1870,
   "height": 902,
-  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/gh-pages/static/media/captura-human-design1.f2f1c91eedd17e5dbc44.jpg?raw=true"
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-human-design1.jpg?raw=true"
 },
 {
   "id": "Captura 2",
@@ -111,6 +111,29 @@ const images = [{
   "width": 1868,
   "height": 732,
   "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-human-design3.jpg?raw=true"
+}];
+
+  
+const images2 = [{
+  "id": "Captura 1",
+  "author": "Dem Rom",
+  "width": 1870,
+  "height": 902,
+  "download_url": ""
+},
+{
+  "id": "Captura 2",
+  "author": "Dem Rom",
+  "width": 1869,
+  "height": 905,
+  "download_url": ""
+},
+{
+  "id": "Captura 3",
+  "author": "Dem Rom",
+  "width": 1868,
+  "height": 732,
+  "download_url": ""
 }];
 
 const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -309,22 +332,18 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
                 variant="h4"
               >
                 Página Fake de Diseño de Interiores Human Design
+                realizada con React implementando librería Material UI
               </Typography>
             </Paper>
           </Grid>
           <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
-            <Box
-  component="img"
-  sx={{
-    height: 258.59,
-    width: 600,
-    // maxHeight: { xs: 233, md: 167 },
-    // maxWidth: { xs: 350, md: 250 },
-  }}
-  alt="The house from the offer."
-  src={captura4}
-/>
+            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
+                {
+                  images2.map(image=> <img src={image.download_url} alt={image.author}/>)
+                }
+
+    </Carousel>
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 variant="body2"
@@ -332,7 +351,7 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
                 component="span"
                 variant="h4"
               >
-                Applestore
+                Página con Slider - realizada en React con MUI
               </Typography>
             </Paper>
           </Grid>
