@@ -119,21 +119,21 @@ const images2 = [{
   "author": "Dem Rom",
   "width": 1870,
   "height": 902,
-  "download_url": ""
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-slider-web1.jpg?raw=true"
 },
 {
   "id": "Captura 2",
   "author": "Dem Rom",
   "width": 1869,
   "height": 905,
-  "download_url": ""
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-slider-web2.jpg?raw=true"
 },
 {
   "id": "Captura 3",
   "author": "Dem Rom",
   "width": 1868,
   "height": 732,
-  "download_url": ""
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-slider-web3.jpg?raw=true"
 }];
 
 const [anchorElNav, setAnchorElNav] = React.useState(null);
