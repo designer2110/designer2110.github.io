@@ -201,27 +201,23 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
         </header>
 
         <Grid container spacing={12}>
-          <Grid item xs={4} md={6}>
+        <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
-            <Box
-  component="img"
-  sx={{
-    height: 258.59,
-    width: 600,
-    // maxHeight: { xs: 233, md: 167 },
-    // maxWidth: { xs: 350, md: 250 },
-  }}
-  alt="The house from the offer."
-  src={captura1}
-/>
-              <Typography
+            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
+                {
+                  images.map(image=> <img src={image.download_url} alt={image.author}/>)
+                }
+
+    </Carousel>
+            <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
               >
-                Lalashop - tienda de articulos trabajo final React - Coderhouse
+                Página Fake de Diseño de Interiores Human Design
+                realizada con React implementando librería Material UI
               </Typography>
             </Paper>
           </Grid>
@@ -253,7 +249,54 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
       </Box>
       <Box m={16}>
       <Grid container spacing={12}>
+      <Grid item xs={4} md={6}>
+            <Paper className={classes.paper}>
+            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
+                {
+                  images2.map(image=> <img src={image.download_url} alt={image.author}/>)
+                }
+
+    </Carousel>
+              <Typography
+                // style={{ width: "70%", margin: "auto" }}
+                variant="body2"
+                color="primary"
+                component="span"
+                variant="h4"
+              >
+                Página con Slider - realizada en React con MUI
+              </Typography>
+            </Paper>
+          </Grid>
           <Grid item xs={4} md={6}>
+            <Paper className={classes.paper}>
+            <Box
+  component="img"
+  sx={{
+    height: 258.59,
+    width: 600,
+    // maxHeight: { xs: 233, md: 167 },
+    // maxWidth: { xs: 350, md: 250 },
+  }}
+  alt="The house from the offer."
+  src={captura1}
+/>
+              <Typography
+                // style={{ width: "70%", margin: "auto" }}
+                variant="body2"
+                color="primary"
+                component="span"
+                variant="h4"
+              >
+                Lalashop - tienda de articulos trabajo final React - Coderhouse
+              </Typography>
+            </Paper>
+          </Grid>         
+          </Grid>
+      </Box>
+      <Box m={16}>
+      <Grid container spacing={12}>
+      <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
              <Box
   component="img"
@@ -277,7 +320,7 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={4} md={6}>
+      <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
             <Box
   component="img"
@@ -298,60 +341,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
                 variant="h4"
               >
                 Applestore
-              </Typography>
-            </Paper>
-          </Grid>
-          </Grid>
-      </Box>
-      <Box m={16}>
-      <Grid container spacing={12}>
-          <Grid item xs={4} md={6}>
-            <Paper className={classes.paper}>
-            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
-                {
-                  images.map(image=> <img src={image.download_url} alt={image.author}/>)
-                }
-
-    </Carousel>
-             {/* <Box
-  component="img"
-  sx={{
-    height: 258.59,
-    width: 600,
-    // maxHeight: { xs: 233, md: 167 },
-    // maxWidth: { xs: 350, md: 250 },
-  }}
-  alt="The house from the offer."
-  src={captura5}
-/> */}
-            <Typography
-                // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
-                color="primary"
-                component="span"
-                variant="h4"
-              >
-                Página Fake de Diseño de Interiores Human Design
-                realizada con React implementando librería Material UI
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={4} md={6}>
-            <Paper className={classes.paper}>
-            <Carousel className="crsl" autoPlay infiniteLoop centerMode interval={4000} indicators={true}>
-                {
-                  images2.map(image=> <img src={image.download_url} alt={image.author}/>)
-                }
-
-    </Carousel>
-              <Typography
-                // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
-                color="primary"
-                component="span"
-                variant="h4"
-              >
-                Página con Slider - realizada en React con MUI
               </Typography>
             </Paper>
           </Grid>
