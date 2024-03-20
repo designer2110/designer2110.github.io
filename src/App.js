@@ -74,6 +74,16 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     verticalAlign: "middle"
   },
+  // typography: {
+  //   body2_medium: {
+  //     h4,
+  //   },
+  //   body2_medium: {
+  //     lineHeight: 1.6,
+  //     fontSize: 18,
+  //     fontWeight: 500,
+  //   },
+  // },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
@@ -211,7 +221,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
     </Carousel>
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
@@ -236,7 +245,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
 />
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
@@ -259,7 +267,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
     </Carousel>
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
@@ -283,7 +290,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
 />
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
@@ -311,7 +317,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
 />
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
@@ -335,7 +340,6 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
 />
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
-                variant="body2"
                 color="primary"
                 component="span"
                 variant="h4"
