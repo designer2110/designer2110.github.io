@@ -197,9 +197,9 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
 </Toolbar>
 <Toolbar>
 <div>
-          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io">Mis trabajos</Button>
-          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io/sobremi">Sobre mí</Button>
-          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://github.com/designer2110/demrom.github.io/contacto">Contacto</Button>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="https://designer2110.github.io">Mis trabajos</Button>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="#">Sobre mí</Button>
+          <Button className={classes.button} variant="outlined" sx={{ m: 2 }} href="#">Contacto</Button>
           </div>
         </Toolbar>
         </Paper>
