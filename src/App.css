@@ -76,3 +76,9 @@ a {
   width: 600px;
   height: 258.59px;
 }
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  margin: auto;
+}

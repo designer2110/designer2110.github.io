@@ -16,6 +16,7 @@ import captura2 from "./image/captura-laharolda.jpg";
 import captura3 from "./image/captura-bitcoin.jpg";
 import captura4 from "./image/captura-applestore.jpg";
 import captura5 from "./image/captura-human-design1.jpg";
+import captura6 from "./image/captura-TiendaOnline1.jpg";
 import foto from "./image/4x4.jpg";
 import Image from 'mui-image';
 
@@ -146,6 +147,16 @@ const images2 = [{
   "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-slider-web3.jpg?raw=true"
 }];
 
+const images3 = [{
+ "id": "Captura 6",
+  "author": "Dem Rom",
+  "width": 728,
+  "height": 677,
+  "download_url": "https://github.com/designer2110/designer2110.github.io/blob/master/src/image/captura-TiendaOnline1.jpg?raw=true"
+}];
+
+
+
 const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -219,11 +230,13 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
                 }
 
     </Carousel>
+                <br></br>
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Página Fake de Diseño de Interiores Human Design
                 realizada con React implementando librería Material UI
@@ -232,6 +245,7 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
           </Grid>
           <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
+              <div className="crsl">
             <Box
   component="img"
   sx={{
@@ -242,12 +256,14 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
   }}
   alt="The house from the offer."
   src={captura2}
-/>
+/></div><br></br>
+<br></br>
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Tienda de vinos - La Harolda
               </Typography>
@@ -265,18 +281,23 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
                 }
 
     </Carousel>
+    <br></br>
+<br></br>
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Página con Slider - realizada en React con MUI
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={4} md={6}>
+          <Grid item xs={4} md={6} display="flex" justifyContent="center" 
+    alignItems="center">
             <Paper className={classes.paper}>
+              <div className="crsl">
             <Box
   component="img"
   sx={{
@@ -287,12 +308,14 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
   }}
   alt="The house from the offer."
   src={captura1}
-/>
+/></div><br></br>
+<br></br>
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Lalashop - tienda de articulos trabajo final React - Coderhouse
               </Typography>
@@ -302,8 +325,10 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
       </Box>
       <Box m={16}>
       <Grid container spacing={12}>
-      <Grid item xs={4} md={6}>
+      <Grid item xs={4} md={6} display="flex" justifyContent="center" 
+    alignItems="center">
             <Paper className={classes.paper}>
+              <div className="crsl">
              <Box
   component="img"
   sx={{
@@ -314,12 +339,14 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
   }}
   alt="The house from the offer."
   src={captura3}
-/>
+/></div><br></br>
+<br></br>
             <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Página de Bitcoin
               </Typography>
@@ -327,6 +354,7 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
           </Grid>
       <Grid item xs={4} md={6}>
             <Paper className={classes.paper}>
+              <div className="crsl">
             <Box
   component="img"
   sx={{
@@ -337,14 +365,48 @@ const [anchorElNav, setAnchorElNav] = React.useState(null);
   }}
   alt="The house from the offer."
   src={captura4}
-/>
+/></div><br></br>
+<br></br>
               <Typography
                 // style={{ width: "70%", margin: "auto" }}
                 color="primary"
                 component="span"
                 variant="h4"
+                className='grid-item'
               >
                 Applestore
+              </Typography>
+            </Paper>
+          </Grid>
+          </Grid>
+          </Box>
+           <Box m={16}>
+      <Grid container spacing={12}>
+          <Grid item xs={4} md={6}>
+            <Paper className={classes.paper}>
+              <div className="crsl">
+                <a href = "https://tienda2110.vercel.app/">
+            <Box
+  component="img"
+  sx={{
+    height: 258.59,
+    width: 600,
+    // maxHeight: { xs: 233, md: 167 },
+    // maxWidth: { xs: 350, md: 250 },
+  }}
+  alt="Tienda Online"
+  src={captura6}
+/></a></div><br></br>
+<br></br>
+              <Typography
+                // style={{ width: "70%", margin: "auto" }}
+                color="primary"
+                component="span"
+                variant="h4"
+                className='grid-item'
+                
+              >
+                <a href = "https://tienda2110.vercel.app/">Tienda On Line con MP y PayPal</a>
               </Typography>
             </Paper>
           </Grid>
