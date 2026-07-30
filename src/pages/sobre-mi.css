@@ -1,0 +1,17 @@
+.texto {
+    color: blue;
+    font-size:large;
+    text-align: justify;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 30 vh;
+
+}
+
+.contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
