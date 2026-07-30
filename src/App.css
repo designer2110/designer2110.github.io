@@ -1,84 +1,70 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Evita que las imágenes generen
+   desbordamiento horizontal */
+
+img {
+  max-width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-
-paper {
-  display: "flex";
-  justifyContent: "center";
-  alignItems: "center";
-  textAlign: "center";
-  verticalAlign: "middle";
-  boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)";
-}
-
-box{
-  margin-right: 60px;
-}
-
-
-Toolbar {
-  display: flex;
-  justify-content: left;
-}
-
-
-Button {
-  margin-right: 15px;
-}
+/* Links */
 
 a {
-  text-decoration: none;
+  color: inherit;
 }
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
 }
 
-.crsl {
-  width: 600px;
-  height: 258.59px;
-  margin: auto;
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
 }
 
-.crsl img {
-  width: 600px;
-  height: 258.59px;
-}
 
-.grid-item {
-  display: grid;
-  place-items: center;
-  margin: auto;
+/* =========================================
+   ESCRITORIO
+========================================= */
+
+@media (min-width: 901px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
 }
