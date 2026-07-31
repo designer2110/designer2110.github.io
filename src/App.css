@@ -1,3 +1,24 @@
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+/*
 * {
   box-sizing: border-box;
 }
@@ -19,13 +40,13 @@ body {
 
 /* Evita que las imágenes generen
    desbordamiento horizontal */
-
+/**
 img {
   max-width: 100%;
 }
 
 /* Links */
-
+/**
 a {
   color: inherit;
 }
@@ -33,7 +54,7 @@ a {
 /* =========================================
    CELULARES
 ========================================= */
-
+/*
 @media (max-width: 600px) {
 
   body {
@@ -47,7 +68,7 @@ a {
 /* =========================================
    TABLETS
 ========================================= */
-
+/*
 @media (min-width: 601px) and (max-width: 900px) {
 
   body {
@@ -60,7 +81,7 @@ a {
 /* =========================================
    ESCRITORIO
 ========================================= */
-
+/*
 @media (min-width: 901px) {
 
   body {
