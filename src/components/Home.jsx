@@ -88,8 +88,8 @@ export default function SearchAppBar() {
       navButtonsAlwaysVisible={false}
       animation="slide"
       sx={{
-        width: '100%',
-        maxWidth: '100%',
+        width: '100vh',
+        maxWidth: '100vh',
         overflow: 'hidden'
       }}
     >
@@ -262,7 +262,7 @@ export default function SearchAppBar() {
 
     <Box
       sx={{
-        width: '100%',
+        width: '100vh',
         minHeight: '100vh',
         overflowX: 'hidden'
       }}
