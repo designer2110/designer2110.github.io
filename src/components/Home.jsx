@@ -135,7 +135,7 @@ export default function SearchAppBar() {
     image,
     imageAlt,
     link,
-    carousel
+    /* carousel*/
   }) => {
 
     const content = (
