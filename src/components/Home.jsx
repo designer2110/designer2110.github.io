@@ -911,7 +911,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
  import LinkedInIcon from "@mui/icons-material/LinkedIn";
   import EmailIcon from "@mui/icons-material/Email";
    const projects = [{ title: "React Web Application", description: "Responsive web application developed with React and Material UI.", technologies: ["React", "MUI", "JavaScript"], link: "#" }, { title: "Node.js API", description: "Backend API with authentication, sessions and MongoDB integration.", technologies: ["Node.js", "Express", "MongoDB"], link: "#" }, { title: "Windows Forms Application", description: "Desktop application developed with C# and SQL Server.", technologies: ["C#", "SQL Server", "WinForms"], link: "#" }];
-    function Portfolio() 
+    function SearchAppBar() 
     { return (
     <Box sx={{ minHeight: "100vh", width: "100%", overflowX: "hidden", backgroundColor: "#f5f7fa" }} > {/* NAVIGATION */} 
     <AppBar position="sticky" elevation={2}>
@@ -966,4 +966,4 @@ import GitHubIcon from "@mui/icons-material/GitHub";
                                              <Stack direction="row" justifyContent="center" spacing={2} sx={{ mt: 4 }} > <IconButton component="a" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" > <GitHubIcon />
                                               </IconButton> <IconButton component="a" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" > <LinkedInIcon /> </IconButton> <IconButton component="a" href="mailto:you@example.com" aria-label="Email" > <EmailIcon /> 
                                               </IconButton> </Stack> </Container> </Box> {/* FOOTER */} <Box component="footer" sx={{ py: 3, textAlign: "center", backgroundColor: "#111", color: "white" }} > <Typography variant="body2"> © {new Date().getFullYear()} Your Name. All rights reserved. </Typography> </Box> </Box>);
-                                              } export default Portfolio;
+                                              } export default SearchAppBar();
