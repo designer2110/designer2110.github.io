@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Tienda de vinos - La Harolda",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-laharolda.jpg'},
+    image: '/image/captura-laharolda.jpg',
   },
   {
     title: "Página con Slider - realizada en React con MUI",

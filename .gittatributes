@@ -1,0 +1,6 @@
+# Force all text files to use LF line endings on commit and checkout
+* text=auto eol=lf
+
+# Explicitly ensure CSS and JS use LF
+*.css text eol=lf
+*.js text eol=lf
