@@ -2,9 +2,9 @@ import './App.css';
 import './bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import HomePage from "./pages/homepage";
-import SearchAppBar from './pages/sobre-mi';
+import SobreMi from './pages/sobre-mi';
 // eslint-disable-next-line no-unused-vars
-import SearchAppBar2 from './pages/certificados';
+import Certificados from './pages/certificados';
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/sobre-mi" element={<SearchAppBar />} />
-            <Route path='/certificados' element={<SearchAppBar2 />} />
+            <Route path="/sobre-mi" element={<SobreMi />} />
+            <Route path='/certificados' element={<Certificados />} />
           </Routes>
         </BrowserRouter>
     </div>
