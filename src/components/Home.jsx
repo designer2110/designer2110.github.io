@@ -15,15 +15,15 @@ import {
 import Carousel from "react-material-ui-carousel";
 
 const images = [
-  {src: process.env.PUBLIC_URL + "image/captura-human-design1.jpg"},
-  {src: process.env.PUBLIC_URL + "image/captura-human-design1.jpg"},
-  {src: process.env.PUBLIC_URL + "image/captura-human-design3.jpg"}
+  {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
+  {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
+  {src: process.env.PUBLIC_URL + "/image/captura-human-design3.jpg"}
 ]
 
 const images2 = [
-  {src: process.env.PUBLIC_URL + "image/captura-slider-web1.jpg"},
-  {src: process.env.PUBLIC_URL + "image/captura-slider-web2.jpg"},
-  {src: process.env.PUBLIC_URL + "image/captura-slider-web3.jpg"}
+  {src: process.env.PUBLIC_URL + "/image/captura-slider-web1.jpg"},
+  {src: process.env.PUBLIC_URL + "/image/captura-slider-web2.jpg"},
+  {src: process.env.PUBLIC_URL + "/image/captura-slider-web3.jpg"}
 ]
 
 const projects = [
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Tienda de vinos - La Harolda",
-    image: {src: process.env.PUBLIC_URL + 'image/captura-laharolda.jpg'},
+    image: {src: process.env.PUBLIC_URL + '/image/captura-laharolda.jpg'},
   },
   {
     title: "Página con Slider - realizada en React con MUI",
@@ -46,15 +46,15 @@ const projects = [
   },
   {
     title: "Lalashop - tienda de artículos trabajo final React - Coderhouse",
-    image: {src: process.env.PUBLIC_URL + 'image/captura-lalashop.jpg'},
+    image: {src: process.env.PUBLIC_URL + '/image/captura-lalashop.jpg'},
   },
   {
     title: "Página de Bitcoin",
-    image: {src: process.env.PUBLIC_URL + 'image/captura-bitcoin.jpg'},
+    image: {src: process.env.PUBLIC_URL + '/image/captura-bitcoin.jpg'},
   },
   {
     title: "Applestore",
-    image: {src: process.env.PUBLIC_URL + 'image/captura-applestore.jpg'},
+    image: {src: process.env.PUBLIC_URL + '/image/captura-applestore.jpg'},
   },
 ];
 
@@ -300,7 +300,7 @@ export default function SearchAppBar() {
 
             <Box
               component="img"
-              src={process.env.PUBLIC_URL + 'image/4x4.jpg'}
+              src={process.env.PUBLIC_URL + '/image/4x4.jpg'}
               alt="Demi Román"
               sx={{
                 width: {
