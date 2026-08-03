@@ -181,6 +181,7 @@ function ProjectCard({ project }) {
             />
           </Box>
             ) : (
+              project.title === "Tienda de vinos - La Harolda" ? (
               <Box
               sx={{
               display: "block",
@@ -202,8 +203,30 @@ function ProjectCard({ project }) {
                 objectFit: "cover",
               }}
             />
-            </Box>
-        )))}
+            </Box>) : (
+              project.title === "Lalashop - tienda de artículos trabajo final React - Coderhouse" ? (
+        <Box
+              sx={{
+              display: "block",
+              width: "100%",
+            }}
+          >
+              <Box
+              component="img"
+              src={project.image}
+              alt={project.title}
+              sx={{
+                display: "block",
+                width: "100%",
+                height: {
+                  xs: 190,
+                  sm: 260,
+                  md: 300,
+                },
+                objectFit: "cover",
+              }}
+            />
+            </Box>) : null))))}
       </Box>
 
       {/* TEXTO */}
