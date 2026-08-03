@@ -46,15 +46,15 @@ const projects = [
   },
   {
     title: "Lalashop - tienda de artículos trabajo final React - Coderhouse",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-lalashop.jpg'},
+    image: 'image/captura-lalashop.jpg'
   },
   {
     title: "Página de Bitcoin",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-bitcoin.jpg'},
+    image: 'image/captura-bitcoin.jpg'
   },
   {
     title: "Applestore",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-applestore.jpg'},
+    image: 'image/captura-applestore.jpg'
   },
 ];
 
