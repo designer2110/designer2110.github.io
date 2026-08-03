@@ -50,11 +50,11 @@ const projects = [
   },
   {
     title: "Página de Bitcoin",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-bitcoin.jpg'},
+    image: {src: process.env.PUBLIC_URL + 'image/captura-bitcoin.jpg'},
   },
   {
     title: "Applestore",
-    image: {src: process.env.PUBLIC_URL + '/image/captura-applestore.jpg'},
+    image: {src: process.env.PUBLIC_URL + 'image/captura-applestore.jpg'},
   },
 ];
 
@@ -300,7 +300,7 @@ export default function SearchAppBar() {
 
             <Box
               component="img"
-              src={process.env.PUBLIC_URL + '/image/4x4.jpg'}
+              src={process.env.PUBLIC_URL + 'image/4x4.jpg'}
               alt="Demi Román"
               sx={{
                 width: {
