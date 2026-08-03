@@ -1,6 +1,6 @@
 import './App.css';
 import './bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate} from "react-router-dom";
 import HomePage from "./pages/homepage";
 import SobreMi from './pages/sobre-mi';
 // eslint-disable-next-line no-unused-vars
@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/sobre-mi" element={<SobreMi />} />
             <Route path='/certificados' element={<Certificados />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }
