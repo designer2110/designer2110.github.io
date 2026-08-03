@@ -162,7 +162,7 @@ export default function SearchAppBar() {
 
             <Button
               variant="outlined"
-              href="/sobre-mi"
+              href="/#sobre-mi"
               sx={{
                 color: "black",
                 borderColor: "black",
@@ -200,7 +200,7 @@ export default function SearchAppBar() {
 
             <Button
               variant="outlined"
-              href="/certificados"
+              href="/#certificados"
               sx={{
                 color: "black",
                 borderColor: "black",

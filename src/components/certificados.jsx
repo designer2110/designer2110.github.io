@@ -158,7 +158,7 @@ return (
 
             <Button
               variant="outlined"
-              href="/sobre-mi"
+              href="/#sobre-mi"
               sx={{
                 color: "black",
                 borderColor: "black",
@@ -196,7 +196,7 @@ return (
 
             <Button
               variant="outlined"
-              href="/certificados"
+              href="/#certificados"
               sx={{
                 color: "black",
                 borderColor: "black",
