@@ -60,7 +60,7 @@ return (
 
             <Box
               component="img"
-              src="image/4x4.jpg"
+              src={process.env.PUBLIC_URL + '/image/4x4.jpg'}
               alt="Demi Román"
               sx={{
                 width: {
@@ -243,7 +243,7 @@ return (
           >
             <Box
               component="img"
-              src="image/63ebeea30e60d2000ea949c6.png"
+              src={process.env.PUBLIC_URL + '/image/63ebeea30e60d2000ea949c6.png'}
               alt="Certificado React"
               sx={{
                 width: "100%",
@@ -264,7 +264,7 @@ return (
           >
             <Box
               component="img"
-              src="image/64faa8c7ff180c0bd7e38cb6.png"
+              src={process.env.PUBLIC_URL + '/image/64faa8c7ff180c0bd7e38cb6.png'}
               alt="Certificado Backend"
               sx={{
                 width: "100%",

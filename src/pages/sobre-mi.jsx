@@ -65,7 +65,7 @@ export default function SearchAppBar() {
 
             <Box
               component="img"
-              src="image/4x4.jpg"
+              src={process.env.PUBLIC_URL + '/image/4x4.jpg'}
               alt="Demi Román"
               sx={{
                 width: {
