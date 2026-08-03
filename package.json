@@ -34,7 +34,9 @@
       "react-app",
       "react-app/jest"
     ],
-    "endOfLine": "lf"
+     "rules": {
+    "linebreak-style": ["error", "unix"]
+  }
   },
   "browserslist": {
     "production": [

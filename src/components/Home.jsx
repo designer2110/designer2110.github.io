@@ -15,15 +15,21 @@ import {
 import Carousel from "react-material-ui-carousel";
 
 const images = [
-  {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
-  {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
-  {src: process.env.PUBLIC_URL + "/image/captura-human-design3.jpg"}
+  // {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
+  // {src: process.env.PUBLIC_URL + "/image/captura-human-design1.jpg"},
+  // {src: process.env.PUBLIC_URL + "/image/captura-human-design3.jpg"}
+  "/image/captura-human-design1.jpg",
+  "/image/captura-human-design1.jpg",
+  "/image/captura-human-design3.jpg"
 ]
 
 const images2 = [
-  {src: process.env.PUBLIC_URL + "/image/captura-slider-web1.jpg"},
-  {src: process.env.PUBLIC_URL + "/image/captura-slider-web2.jpg"},
-  {src: process.env.PUBLIC_URL + "/image/captura-slider-web3.jpg"}
+  // {src: process.env.PUBLIC_URL + "/image/captura-slider-web1.jpg"},
+  // {src: process.env.PUBLIC_URL + "/image/captura-slider-web2.jpg"},
+  // {src: process.env.PUBLIC_URL + "/image/captura-slider-web3.jpg"}
+  "/image/captura-slider-web1.jpg",
+  "/image/captura-slider-web2.jpg",
+  "/image/captura-slider-web3.jpg"
 ]
 
 const projects = [
@@ -60,6 +66,8 @@ const projects = [
 
 
 function ProjectCard({ project }) {
+  console.log(project.image);
+  console.log(project);
   return (
     <Paper
       elevation={3}
