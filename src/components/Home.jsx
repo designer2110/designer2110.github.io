@@ -182,6 +182,12 @@ function ProjectCard({ project }) {
           </Box>
             ) : (
               <Box
+              sx={{
+              display: "block",
+              width: "100%",
+            }}
+          >
+              <Box
               component="img"
               src={project.image}
               alt={project.title}
@@ -196,6 +202,7 @@ function ProjectCard({ project }) {
                 objectFit: "cover",
               }}
             />
+            </Box>
         )))}
       </Box>
 
