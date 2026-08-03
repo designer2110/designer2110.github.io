@@ -92,7 +92,7 @@ function ProjectCard({ project }) {
           overflow: "hidden",
         }}
       >
-        {/* {project.type === "carousel" &&  project.title === "Página Fake Human Design con librería Material UI" ? (
+        {project.type === "carousel" &&  project.title === "Página Fake Human Design con librería Material UI" ? (
           <Carousel
             autoPlay
             infiniteLoop
@@ -152,8 +152,8 @@ function ProjectCard({ project }) {
                 }}
               />
             ))}
-          </Carousel>) : ( */}
-            { project.title === "Tienda On Line con MP y PayPal" ? (
+          </Carousel>) : (
+            project.title === "Tienda On Line con MP y PayPal" ? (
           <Box
             component="a"
             href={project.link || "#"}
@@ -226,7 +226,7 @@ function ProjectCard({ project }) {
                 objectFit: "cover",
               }}
             />
-            </Box>) : null))}
+            </Box>) : null))))}
       </Box>
 
       {/* TEXTO */}
