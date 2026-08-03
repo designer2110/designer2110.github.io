@@ -14,7 +14,7 @@ import {
 import "./certificados.css";
 
     
-     export default function SearchAppBar2() {
+     export default function SearchAppBar() {
    
 return (
   <Box
