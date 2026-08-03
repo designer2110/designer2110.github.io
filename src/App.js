@@ -13,8 +13,8 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/sobre-mi" element={<SobreMi />} />
-            <Route path='/certificados' element={<Certificados />} />
+            <Route path="/#sobre-mi" element={<SobreMi />} />
+            <Route path='/#certificados' element={<Certificados />} />
           </Routes>
         </HashRouter>
     </div>
