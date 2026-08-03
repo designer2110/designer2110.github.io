@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Tienda de vinos - La Harolda",
-    image: 'image/captura-laharolda.jpg',
+    image: "image/captura-laharolda.jpg",
   },
   {
     title: "Página con Slider - realizada en React con MUI",
@@ -46,15 +46,15 @@ const projects = [
   },
   {
     title: "Lalashop - tienda de artículos trabajo final React - Coderhouse",
-    image: 'image/captura-lalashop.jpg'
+    image: "image/captura-lalashop.jpg"
   },
   {
     title: "Página de Bitcoin",
-    image: 'image/captura-bitcoin.jpg'
+    image: "image/captura-bitcoin.jpg"
   },
   {
     title: "Applestore",
-    image: 'image/captura-applestore.jpg'
+    image: "image/captura-applestore.jpg"
   },
 ];
 
