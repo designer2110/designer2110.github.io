@@ -226,7 +226,54 @@ function ProjectCard({ project }) {
                 objectFit: "cover",
               }}
             />
-            </Box>) : null))))}
+            </Box>) : (
+              project.title === "Página de Bitcoin" ? (
+                <Box
+              sx={{
+              display: "block",
+              width: "100%",
+            }}
+          >
+              <Box
+              component="img"
+              src={project.image}
+              alt={project.title}
+              sx={{
+                display: "block",
+                width: "100%",
+                height: {
+                  xs: 190,
+                  sm: 260,
+                  md: 300,
+                },
+                objectFit: "cover",
+              }}
+            />
+            </Box>) : (
+              project.title === "Applestore" ? (
+                <Box
+              sx={{
+              display: "block",
+              width: "100%",
+            }}
+          >
+              <Box
+              component="img"
+              src={project.image}
+              alt={project.title}
+              sx={{
+                display: "block",
+                width: "100%",
+                height: {
+                  xs: 190,
+                  sm: 260,
+                  md: 300,
+                },
+                objectFit: "cover",
+              }}
+            />
+            </Box>) : null
+            ))))))}
       </Box>
 
       {/* TEXTO */}
