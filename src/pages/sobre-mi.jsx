@@ -4,6 +4,7 @@ import './sobre-mi.css';
 
 import {
   AppBar,
+  Container,
   Toolbar,
   Button,
   Typography,
@@ -12,262 +13,214 @@ import {
   Grid
 } from '@mui/material';
 
-import captura1 from "../image/captura-lalashop.jpg";
-import captura2 from "../image/captura-laharolda.jpg";
-import captura3 from "../image/captura-bitcoin.jpg";
-import captura4 from "../image/captura-applestore.jpg";
-import captura5 from "../image/captura-human-design1.jpg";
-import captura6 from "../image/captura-TiendaOnline1.jpg";
-import foto from "../image/4x4.jpg";
-
 
 export default function SearchAppBar() {
 
   return (
-    <Box sx={{ width: '100%', minHeight: '100vh' }}>
+    <Box
+      sx={{
+        width: "100%",
+        minHeight: "100vh",
+        overflowX: "hidden",
+      }}
+    >
 
-      {/* =========================
-          BARRA SUPERIOR
-      ========================== */}
+      {/* ========================= */}
+      {/* HEADER */}
+      {/* ========================= */}
 
       <AppBar
         position="static"
         elevation={0}
         sx={{
-          backgroundColor: '#C4C4C4',
-          width: '100%'
+          backgroundColor: "#C4C4C4",
+          color: "black",
         }}
       >
-
-        <Paper
-          elevation={3}
-          sx={{
-            width: '100%',
-            borderRadius: {
-              xs: 0,
-              sm: '0 0 25px 25px'
-            },
-            overflow: 'hidden'
-          }}
-        >
-
-          {/* =========================
-              CABECERA
-          ========================== */}
+        <Container maxWidth="lg">
 
           <Toolbar
+            disableGutters
             sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              padding: {
-                xs: '20px 12px',
-                sm: '25px',
-                md: '30px'
-              }
+              py: {
+                xs: 2,
+                sm: 2,
+                md: 3,
+              },
+              display: "flex",
+              flexDirection: {
+                xs: "column",
+                sm: "row",
+              },
+              gap: {
+                xs: 2,
+                sm: 3,
+              },
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
 
-            <Grid
-              container
-              spacing={2}
-              alignItems="center"
-              justifyContent="center"
-            >
+            {/* FOTO */}
 
-              {/* TEXTO */}
+            <Box
+              component="img"
+              src="image/4x4.jpg"
+              alt="Demi Román"
+              sx={{
+                width: {
+                  xs: 100,
+                  sm: 120,
+                  md: 150,
+                },
+                height: {
+                  xs: 100,
+                  sm: 120,
+                  md: 137,
+                },
+                objectFit: "cover",
+                borderRadius: "50%",
+              }}
+            />
 
-              <Grid
-                item
-                xs={12}
-                sm={8}
-                md={9}
-                sx={{
-                  textAlign: {
-                    xs: 'center',
-                    sm: 'left'
-                  }
-                }}
-              >
-
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: 700,
-                    color: 'black',
-                    fontSize: {
-                      xs: '1.1rem',
-                      sm: '1.4rem',
-                      md: '1.5rem'
-                    },
-                    mb: 1
-                  }}
-                >
-                  PORTFOLIO
-                </Typography>
-
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: 700,
-                    color: 'black',
-                    fontSize: {
-                      xs: '1.3rem',
-                      sm: '1.7rem',
-                      md: '2rem'
-                    },
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  Demi Román Portfolio
-                </Typography>
-
-              </Grid>
-
-
-              {/* FOTO */}
-
-              <Grid
-                item
-                xs={12}
-                sm={4}
-                md={3}
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}
-              >
-
-                <Box
-                  component="img"
-                  src={foto}
-                  alt="Foto de Demi Román"
-                  sx={{
-                    width: {
-                      xs: 120,
-                      sm: 140,
-                      md: 150
-                    },
-                    height: {
-                      xs: 120,
-                      sm: 140,
-                      md: 137
-                    },
-                    objectFit: 'cover',
-                    borderRadius: '50%',
-                    display: 'block'
-                  }}
-                />
-
-              </Grid>
-
-            </Grid>
-
-          </Toolbar>
-
-
-          {/* =========================
-              MENÚ
-          ========================== */}
-
-          <Toolbar
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              padding: {
-                xs: '10px 12px 20px',
-                sm: '10px 20px 25px'
-              }
-            }}
-          >
+            {/* TÍTULOS */}
 
             <Box
               sx={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: {
-                  xs: 1,
-                  sm: 2
+                textAlign: {
+                  xs: "center",
+                  sm: "left",
                 },
-                width: '100%',
-                maxWidth: '900px'
               }}
             >
-
-              <Button
-                variant="outlined"
-                href="https://designer2110.github.io"
+              <Typography
+                variant="h5"
                 sx={{
-                  minWidth: {
-                    xs: '45%',
-                    sm: 150
-                  },
+                  fontWeight: 700,
                   fontSize: {
-                    xs: '0.75rem',
-                    sm: '0.875rem'
-                  }
+                    xs: "1.5rem",
+                    sm: "1.8rem",
+                    md: "2rem",
+                  },
                 }}
               >
-                Mis trabajos
-              </Button>
+                PORTFOLIO
+              </Typography>
 
-              <Button
-                variant="outlined"
-                href="/sobre-mi"
+              <Typography
+                variant="h6"
                 sx={{
-                  minWidth: {
-                    xs: '45%',
-                    sm: 150
-                  },
                   fontSize: {
-                    xs: '0.75rem',
-                    sm: '0.875rem'
-                  }
+                    xs: "1rem",
+                    sm: "1.2rem",
+                    md: "1.4rem",
+                  },
                 }}
               >
-                Sobre mí
-              </Button>
-
-              <Button
-                variant="outlined"
-                href="#"
-                sx={{
-                  minWidth: {
-                    xs: '45%',
-                    sm: 150
-                  },
-                  fontSize: {
-                    xs: '0.75rem',
-                    sm: '0.875rem'
-                  }
-                }}
-              >
-                Contacto
-              </Button>
-
-              <Button
-                variant="outlined"
-                href="/certificados"
-                sx={{
-                  minWidth: {
-                    xs: '45%',
-                    sm: 150
-                  },
-                  fontSize: {
-                    xs: '0.75rem',
-                    sm: '0.875rem'
-                  }
-                }}
-              >
-                Mis certificados
-              </Button>
-
+                Demi Román Portfolio
+              </Typography>
             </Box>
 
           </Toolbar>
 
-        </Paper>
 
+          {/* ========================= */}
+          {/* MENÚ */}
+          {/* ========================= */}
+
+          <Toolbar
+            disableGutters
+            sx={{
+              py: 1.5,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: {
+                xs: 0.5,
+                sm: 1,
+              },
+            }}
+          >
+
+            <Button
+              variant="outlined"
+              href="https://designer2110.github.io"
+              sx={{
+                color: "black",
+                borderColor: "black",
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.85rem",
+                },
+                minWidth: {
+                  xs: "auto",
+                  sm: 110,
+                },
+              }}
+            >
+              Mis trabajos
+            </Button>
+
+            <Button
+              variant="outlined"
+              href="/sobre-mi"
+              sx={{
+                color: "black",
+                borderColor: "black",
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.85rem",
+                },
+                minWidth: {
+                  xs: "auto",
+                  sm: 110,
+                },
+              }}
+            >
+              Sobre mí
+            </Button>
+
+            <Button
+              variant="outlined"
+              href="#"
+              sx={{
+                color: "black",
+                borderColor: "black",
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.85rem",
+                },
+                minWidth: {
+                  xs: "auto",
+                  sm: 110,
+                },
+              }}
+            >
+              Contacto
+            </Button>
+
+            <Button
+              variant="outlined"
+              href="/certificados"
+              sx={{
+                color: "black",
+                borderColor: "black",
+                fontSize: {
+                  xs: "0.7rem",
+                  sm: "0.85rem",
+                },
+                minWidth: {
+                  xs: "auto",
+                  sm: 110,
+                },
+              }}
+            >
+              Mis certificados
+            </Button>
+
+          </Toolbar>
+
+        </Container>
       </AppBar>
 
 
