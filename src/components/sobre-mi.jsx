@@ -12,6 +12,7 @@ import {
   Grid
 } from '@mui/material';
 
+import { Link } from 'react-router-dom';
 
 export default function SearchAppBar() {
 
@@ -198,9 +199,11 @@ export default function SearchAppBar() {
               Contacto
             </Button>
 
+
             <Button
               variant="outlined"
-              href="/#certificados"
+              component={Link}
+              to="/certificados"
               sx={{
                 color: "black",
                 borderColor: "black",
@@ -211,10 +214,10 @@ export default function SearchAppBar() {
                 minWidth: {
                   xs: "auto",
                   sm: 110,
-                },
+                }
               }}
             >
-              Mis certificados
+              Ver Certificados
             </Button>
 
           </Toolbar>

@@ -12,6 +12,7 @@ import {
   Container,
 } from "@mui/material";
 
+import { Link } from 'react-router-dom';
 import Carousel from "react-material-ui-carousel";
 
 const images = [
@@ -483,7 +484,8 @@ export default function SearchAppBar() {
 
             <Button
               variant="outlined"
-              href="/#sobre-mi"
+              component={Link}
+              to="/sobre-mi"
               sx={{
                 color: "black",
                 borderColor: "black",
@@ -494,7 +496,7 @@ export default function SearchAppBar() {
                 minWidth: {
                   xs: "auto",
                   sm: 110,
-                },
+                }
               }}
             >
               Sobre mí
@@ -521,7 +523,8 @@ export default function SearchAppBar() {
 
             <Button
               variant="outlined"
-              href="/#certificados"
+              component={Link}
+              to="/certificados"
               sx={{
                 color: "black",
                 borderColor: "black",
@@ -532,12 +535,11 @@ export default function SearchAppBar() {
                 minWidth: {
                   xs: "auto",
                   sm: 110,
-                },
+                }
               }}
             >
-              Mis certificados
+            Ver Certificados
             </Button>
-
           </Toolbar>
 
         </Container>

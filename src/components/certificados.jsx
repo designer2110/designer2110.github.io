@@ -11,6 +11,7 @@ import {
   Container,
 } from "@mui/material";
 
+import { Link } from 'react-router-dom';
 import "./certificados.css";
 
     
@@ -195,23 +196,24 @@ return (
             </Button>
 
             <Button
-              variant="outlined"
-              href="/#certificados"
-              sx={{
-                color: "black",
-                borderColor: "black",
-                fontSize: {
-                  xs: "0.7rem",
-                  sm: "0.85rem",
-                },
-                minWidth: {
-                  xs: "auto",
-                  sm: 110,
-                },
-              }}
-            >
-              Mis certificados
-            </Button>
+                          variant="outlined"
+                          component={Link}
+                          to="/certificados"
+                          sx={{
+                            color: "black",
+                            borderColor: "black",
+                            fontSize: {
+                              xs: "0.7rem",
+                              sm: "0.85rem",
+                            },
+                            minWidth: {
+                              xs: "auto",
+                              sm: 110,
+                            }
+                          }}
+                        >
+                        Ver Certificados
+                        </Button>
 
           </Toolbar>
 
