@@ -1,3 +1,8 @@
+
+## Demi Román Portfolio
+
+Hola, este es mi portfolio personal. Acá vas a encontrar mis proyectos, páginas en las que estuve trabajando, y vas a encontrar tanto algún e-commerce como otros.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
